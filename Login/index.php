@@ -19,7 +19,7 @@ if(isset($_POST['userID'])){
 
     // Check if query was successful and redirect accordingly
     if($result->num_rows > 0){
-        header('Location: adminHome.php');
+        header('Location: ../Login/User/Dean/chart.php');
         exit(); // Stop further execution
     } else {
         echo "Invalid username and password";
@@ -33,7 +33,7 @@ if(isset($_POST['userID'])){
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="../Login/CSS/index.css">
   <title>SPRM</title>
 </head>
 <body>
